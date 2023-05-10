@@ -5,31 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac529aa7-cea9-47c0-9791-afacdd683fb6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/MainScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ClientHandle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/ClientFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/src/main/java/controller/ServerHandle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/src/main/java/model/ClientList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Client.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/.idea/Server.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/.idea/Server.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/src/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/src/view/MainScreen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/src/controller/ServerThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/src/model/Server.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/src/view/MainScreen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/MainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/MainScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/view/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/view/MainScreen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src1/view/MainScreen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/controller/ServerThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/model/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/model/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/view/MainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/view/MainScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,16 +50,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "client",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;server&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ADMIN/OneDrive - VNU-HCMUS/Desktop/RemoteDirMonitor/Server&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="view" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Client" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -69,7 +92,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683225484181</updated>
-      <workItem from="1683225485550" duration="223000" />
+      <workItem from="1683225485550" duration="255000" />
+      <workItem from="1683225832430" duration="1113000" />
+      <workItem from="1683228862892" duration="1958000" />
+      <workItem from="1683272340995" duration="293000" />
+      <workItem from="1683646085456" duration="4185000" />
+      <workItem from="1683722607372" duration="1816000" />
     </task>
     <servers />
   </component>
