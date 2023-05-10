@@ -5,38 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aa34f0a-f325-466e-8684-0f13f19f8bc5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Client/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Client/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Client/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Client/src/main/java/view/MainScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/src/main/java/controller/ClientHandle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/src/main/java/model/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/src/main/java/view/ClientFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ServerHandle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/ClientList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/.idea/Client.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Server.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/.idea/Server.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/src/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/src/view/MainScreen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/ServerThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Server.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/MainScreen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/main/java/view/MainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/main/java/view/MainScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/src/view/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/src/view/MainScreen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/src1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/src1/view/MainScreen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ServerThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/MainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/MainScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -46,16 +50,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "client",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;server&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ADMIN/OneDrive - VNU-HCMUS/Desktop/RemoteDirMonitor/Server&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -65,6 +88,11 @@
       <option name="presentableId" value="Default" />
       <updated>1683225653436</updated>
       <workItem from="1683225654518" duration="82000" />
+      <workItem from="1683225888586" duration="4520000" />
+      <workItem from="1683272769391" duration="852000" />
+      <workItem from="1683645998271" duration="84000" />
+      <workItem from="1683648039243" duration="1290000" />
+      <workItem from="1683723205645" duration="1103000" />
     </task>
     <servers />
   </component>

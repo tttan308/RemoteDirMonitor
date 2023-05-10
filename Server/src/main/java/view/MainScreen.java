@@ -1,8 +1,14 @@
 package view;
 
+import controller.ServerHandle;
+import model.ClientList;
+
 import javax.swing.*;
 import java.awt.*;
+import java.io.IOException;
 import java.net.InetAddress;
+import java.net.ServerSocket;
+import java.net.Socket;
 import java.net.UnknownHostException;
 
 public class MainScreen {
@@ -20,7 +26,7 @@ public class MainScreen {
         registerServerFrame();
     }
 
-    public void registerServerFrame() {
+    private void registerServerFrame() {
         registerServerFrame.setSize(500, 200);
         registerServerFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         registerServerFrame.setLayout(new GridLayout(3, 1));
@@ -63,7 +69,7 @@ public class MainScreen {
         registerServerFrame.setVisible(true);
     }
 
-    void serverFrame() {
+    private void serverFrame() {
         serverFrame.setSize(500, 500);
         serverFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         serverFrame.setLayout(new GridLayout(2, 1));
@@ -82,10 +88,28 @@ public class MainScreen {
         infoServer.add(serverIP);
         serverFrame.add(infoServer);
 
+        try {
+            ServerSocket ss = new ServerSocket(Integer.parseInt(portField.getText()));
+            new Thread(){
+                @Override
+                public void run() {
+                    try {
+                        Socket s = ss.accept();
+                        ServerHandle serverHandle = new ServerHandle(s);
+                        ClientList.addClient(serverHandle);
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
+                }
+            }.start();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
         serverFrame.setVisible(true);
     }
 
-    public boolean checkInfo() {
+    private boolean checkInfo() {
         if (portField.getText().equals("") || serverNameField.getText().equals("")) {
             return false;
         }

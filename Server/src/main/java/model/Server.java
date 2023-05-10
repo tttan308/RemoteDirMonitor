@@ -1,25 +1,19 @@
-package src.model;
+package model;
 
-public class Server {
-    private String serverName;
+import controller.ServerHandle;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class Server implements Runnable{
     private int port;
-    private String serverIP;
+    private ServerSocket serverSocket;
 
-    public Server(String serverName, int port, String serverIP) {
-        this.serverName = serverName;
+    public Server(int port){
         this.port = port;
-        this.serverIP = serverIP;
     }
 
-    public String getServerName() {
-        return serverName;
-    }
+    @Override
+    public void run() {
 
-    public int getPort() {
-        return port;
-    }
-
-    public String getServerIP() {
-        return serverIP;
     }
 }
