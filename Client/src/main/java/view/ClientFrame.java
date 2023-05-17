@@ -58,7 +58,7 @@ public class ClientFrame {
         clientFrame.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
-                clientHandle.closeSocket();
+                if(clientHandle != null) clientHandle.closeSocket();
                 registerClientFrame.setVisible(true);
                 clientFrame.setVisible(false);
             }

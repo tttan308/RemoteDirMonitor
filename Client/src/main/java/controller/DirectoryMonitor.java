@@ -8,7 +8,7 @@ import java.nio.file.attribute.BasicFileAttributes;
 import static view.MainScreen.msgField;
 import static view.MainScreen.msgRcv;
 
-public class DirectoryMonitor {
+public class DirectoryMonitor extends Thread{
     private Path path;
     private WatchService watchService;
 
@@ -18,7 +18,7 @@ public class DirectoryMonitor {
         this.path.register(watchService, StandardWatchEventKinds.ENTRY_CREATE, StandardWatchEventKinds.ENTRY_DELETE, StandardWatchEventKinds.ENTRY_MODIFY);
     }
 
-    public void start() {
+    public void run() {
         msgRcv.append("\n").append("Directory monitor started!");
         msgField.setText(String.valueOf(msgRcv));
 
@@ -67,7 +67,12 @@ public class DirectoryMonitor {
             } catch (IOException | InterruptedException e) {
                 msgRcv.append("\n").append("Directory monitor stopped!");
                 msgField.setText(String.valueOf(msgRcv));
-                throw new RuntimeException(e);
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException ex) {
+                    throw new RuntimeException(ex);
+                }
+                break;
             }
         }
     }
@@ -86,14 +91,6 @@ public class DirectoryMonitor {
                 return FileVisitResult.CONTINUE;
             }
         });
-    }
-
-    public void processEvents() {
-        try {
-            start();
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
     }
 }
 

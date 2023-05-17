@@ -1,21 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Server:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aa34f0a-f325-466e-8684-0f13f19f8bc5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Client/src/main/java/controller/DirectoryMonitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/.idea/artifacts/Client_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Server_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/src/main/java/controller/ClientHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/main/java/controller/ClientHandle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/main/java/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/main/java/model/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/main/java/controller/DirectoryMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/main/java/controller/DirectoryMonitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/src/main/java/view/ClientFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/main/java/view/ClientFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/src/main/java/view/MainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/main/java/view/MainScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ServerThread.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/ServerHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ServerHandle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/ClientList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ClientList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Server.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/MainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/MainScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/MainScreen.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,27 +45,39 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2PL9mISdxLKyNNd9pQYlswGn9T6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;server&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ADMIN/OneDrive - VNU-HCMUS/Desktop/RemoteDirMonitor/Server&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "C:/Users/ADMIN/OneDrive - VNU-HCMUS/Desktop/RemoteDirMonitor/Server/src/main/java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15542519",
+    "project.structure.side.proportion": "0.37169158",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Server" />
@@ -60,6 +85,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Server" type="JarApplication">
+      <option name="WORKING_DIRECTORY" value="C:\Users\ADMIN\OneDrive - VNU-HCMUS\Desktop\RemoteDirMonitor\Server" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <module name="Server" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JAR Application.Server" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -89,7 +124,8 @@
       <workItem from="1684125524580" duration="5279000" />
       <workItem from="1684143482634" duration="1062000" />
       <workItem from="1684298455618" duration="668000" />
-      <workItem from="1684302371355" duration="598000" />
+      <workItem from="1684302371355" duration="8432000" />
+      <workItem from="1684320119396" duration="1864000" />
     </task>
     <servers />
   </component>

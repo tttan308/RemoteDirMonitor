@@ -85,7 +85,7 @@ public class MainScreen {
         });
 
         disButton.addActionListener(e -> {
-            clientHandle.closeSocket();
+            if(clientHandle != null) clientHandle.closeSocket();
             registerClientFrame.setVisible(true);
             clientFrame.setVisible(false);
         });

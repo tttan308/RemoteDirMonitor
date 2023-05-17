@@ -1,21 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Client:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac529aa7-cea9-47c0-9791-afacdd683fb6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/DirectoryMonitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Client_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/.idea/artifacts/Server_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/ClientHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ClientHandle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DirectoryMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DirectoryMonitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/ClientFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/ClientFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/MainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/MainScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/controller/ServerThread.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/src/main/java/controller/ServerHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/controller/ServerHandle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/model/ClientList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/model/ClientList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/model/Server.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/src/main/java/view/MainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/view/MainScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/model/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/view/MainScreen.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,24 +50,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;server&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ADMIN/OneDrive - VNU-HCMUS/Desktop/RemoteDirMonitor/Server&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/ADMIN/OneDrive - VNU-HCMUS/Desktop/RemoteDirMonitor/Client/src/main/java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15542519",
+    "project.structure.side.proportion": "0.37169158",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="view" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ADMIN\OneDrive - VNU-HCMUS\Desktop\RemoteDirMonitor\Client\src\main\java" />
     </key>
   </component>
   <component name="RunManager">
@@ -93,7 +113,8 @@
       <workItem from="1684126254231" duration="4795000" />
       <workItem from="1684143310063" duration="1628000" />
       <workItem from="1684297341597" duration="2718000" />
-      <workItem from="1684302381689" duration="2666000" />
+      <workItem from="1684302381689" duration="10809000" />
+      <workItem from="1684320016010" duration="2662000" />
     </task>
     <servers />
   </component>

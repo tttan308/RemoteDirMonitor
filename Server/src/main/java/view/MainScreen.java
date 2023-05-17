@@ -14,6 +14,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.io.File;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.ServerSocket;
@@ -160,10 +161,6 @@ public class MainScreen {
                 public void actionPerformed(ActionEvent e) {
                     DefaultMutableTreeNode selectedNode = (DefaultMutableTreeNode) tree.getLastSelectedPathComponent();
                     if (selectedNode == null) {
-                        JOptionPane.showMessageDialog(selectDirectoryFrame, "Please select a directory!");
-                        return;
-                    }
-                    if (selectedNode.isLeaf()) {
                         JOptionPane.showMessageDialog(selectDirectoryFrame, "Please select a directory!");
                         return;
                     }

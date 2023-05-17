@@ -15,12 +15,11 @@ import static view.MainScreen.*;
 
 public class ClientHandle{
     Client client;
-    private static Socket s;
+    public static Socket s;
     DataInputStream dis;
     static DataOutputStream dos;
     DefaultMutableTreeNode root;
     DefaultTreeModel treeModel;
-    Thread monitorThread;
     DirectoryMonitor directoryMonitor;
 
     public ClientHandle(Client client){
@@ -31,7 +30,9 @@ public class ClientHandle{
                     s = new Socket(client.getHost(), client.getPort());
                     break;
                 } catch (Exception e) {
-                    JOptionPane.showMessageDialog(null, "Port chưa tồn tại, vui lòng bật server!");
+                    msgRcv.append("Failed to connect to server!").append("\n");
+                    msgField.setText(String.valueOf(msgRcv));
+                    Thread.sleep(10000);
                 }
             }
             dis = new DataInputStream(s.getInputStream());
@@ -101,6 +102,8 @@ public class ClientHandle{
             sendMsg(client.getName());
             msgRcv.append("\n").append("disconnect");
             msgField.setText(String.valueOf(msgRcv));
+            if(directoryMonitor != null) directoryMonitor.interrupt();
+            directoryMonitor = null;
             s.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -116,22 +119,14 @@ public class ClientHandle{
             } catch (IOException e) {
                 break;
             }
-            System.out.println(rcv);
             if(Objects.equals(rcv, "disconnect")){
+                msgRcv.append("\n").append(rcv);
+                msgField.setText(String.valueOf(msgRcv));
                 try {
-                    dos.writeUTF(client.getName());
-                    dos.flush();
                     s.close();
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
-                if(monitorThread != null){
-                    directoryMonitor = null;
-                    monitorThread.interrupt();
-                    monitorThread = null;
-                }
-                msgRcv.append("\n").append(rcv);
-                msgField.setText(String.valueOf(msgRcv));
                 clientFrame.setVisible(false);
                 registerClientFrame.setVisible(true);
                 break;
@@ -141,19 +136,8 @@ public class ClientHandle{
                     String path = dis.readUTF();
                     msgRcv.append("\n").append("Server selected path: ").append(path);
                     msgField.setText(String.valueOf(msgRcv));
-                    if(monitorThread != null){
-                        directoryMonitor = null;
-                        monitorThread.interrupt();
-                        monitorThread = null;
-                    }
                     directoryMonitor = new DirectoryMonitor(Paths.get(path));
-                    monitorThread = new Thread(new Runnable() {
-                        @Override
-                        public void run() {
-                            directoryMonitor.processEvents();
-                        }
-                    });
-                    monitorThread.start();
+                    directoryMonitor.start();
                     continue;
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -161,6 +145,7 @@ public class ClientHandle{
             }
             msgRcv.append("\n").append(rcv);
             msgField.setText(String.valueOf(msgRcv));
+            if(!s.isConnected()) break;
         }
     }
 }
