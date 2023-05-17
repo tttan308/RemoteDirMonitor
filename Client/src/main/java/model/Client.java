@@ -2,8 +2,6 @@ package model;
 
 import controller.ClientHandle;
 
-import java.net.Socket;
-
 public class Client implements Runnable{
     private String host;
     private int port;
@@ -30,7 +28,7 @@ public class Client implements Runnable{
     public void run() {
         try {
             Client c = new Client(host, port, name);
-            new Thread(new ClientHandle(c)).start();
+            new Thread((Runnable) new ClientHandle(c)).start();
         } catch (Exception e) {
             e.printStackTrace();
         }

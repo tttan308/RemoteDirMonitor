@@ -1,23 +1,26 @@
 package view;
 
-import controller.ClientHandle;
-import model.Client;
-
 import javax.swing.*;
+import javax.swing.border.CompoundBorder;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.TitledBorder;
 import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+import static view.MainScreen.*;
 
 public class ClientFrame {
-    public ClientFrame(String ip, int port, String name) {
-        Client c = new Client(ip, port, name);
-        ClientHandle clientHandle = new ClientHandle(c);
 
-        JFrame clientFrame = new JFrame("Client " + name);
-        clientFrame.setSize(800, 500);
+    public ClientFrame(String ip, String port, String name) {
+        clientFrame = new JFrame("Client " + name);
+        clientFrame.setSize(1000, 500);
         clientFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        clientFrame.setLayout(new GridLayout(3, 1));
+        clientFrame.setLayout(new BorderLayout());
 
         JPanel inforPanel = new JPanel();
         inforPanel.setLayout(new FlowLayout());
+        inforPanel.setBorder(new CompoundBorder(new EmptyBorder(10, 10, 10, 10), new TitledBorder("Client Information")));
         JLabel ipLabel = new JLabel("IP: " + ip);
         ipLabel.setFont(new Font("Serif", Font.BOLD, 20));
         JLabel portLabel = new JLabel("Port: " + port);
@@ -29,21 +32,36 @@ public class ClientFrame {
         inforPanel.add(clientNameLabel);
 
         JPanel msgPanel = new JPanel();
-        msgPanel.setLayout(new FlowLayout());
-        JTextArea msgField = new JTextArea(20, 70);
-        msgField.setFont(new Font("Serif", Font.PLAIN, 15));
-        msgField.setText("Connecting to server...");
-        msgPanel.add(msgField);
+        msgPanel.setBorder(new CompoundBorder(new EmptyBorder(10, 10, 10, 10), new TitledBorder("Message")));
+        msgPanel.setLayout(new BorderLayout());
+        msgField.setFont(new Font("Serif", Font.PLAIN, 20));
+        msgField.setEditable(false);
+        JScrollPane scrollPane = new JScrollPane(msgField);
+        msgPanel.add(scrollPane, BorderLayout.CENTER);
+
+
 
         JPanel buttonPanel = new JPanel();
         buttonPanel.setLayout(new FlowLayout());
-        JButton sendButton = new JButton("DISCONNECT");
-        buttonPanel.add(sendButton);
+        buttonPanel.add(disButton);
+        //set size for button
+        disButton.setPreferredSize(new Dimension(200, 50));
+        disButton.setFont(new Font("Serif", Font.BOLD, 25));
 
-        clientFrame.add(inforPanel);
-        clientFrame.add(msgPanel);
-        clientFrame.add(sendButton);
+        clientFrame.add(inforPanel, BorderLayout.NORTH);
+        clientFrame.add(msgPanel, BorderLayout.CENTER);
+        clientFrame.add(buttonPanel, BorderLayout.SOUTH);
 
+        clientFrame.setLocationRelativeTo(null);
         clientFrame.setVisible(true);
+
+        clientFrame.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                clientHandle.closeSocket();
+                registerClientFrame.setVisible(true);
+                clientFrame.setVisible(false);
+            }
+        });
     }
 }
