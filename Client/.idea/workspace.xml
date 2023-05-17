@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ac529aa7-cea9-47c0-9791-afacdd683fb6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/DirectoryMonitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ClientHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ClientHandle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/ClientFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/ClientFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/MainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/MainScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/controller/ServerHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/controller/ServerHandle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/model/ClientList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/model/ClientList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/model/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/view/MainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/view/MainScreen.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2PL9QpCydlp8vqVC7m5QGCBmC7f" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;server&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ADMIN/OneDrive - VNU-HCMUS/Desktop/RemoteDirMonitor/Server&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="view" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Client" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ac529aa7-cea9-47c0-9791-afacdd683fb6" name="Changes" comment="" />
+      <created>1683225484181</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683225484181</updated>
+      <workItem from="1683225485550" duration="255000" />
+      <workItem from="1683225832430" duration="1113000" />
+      <workItem from="1683228862892" duration="1958000" />
+      <workItem from="1683272340995" duration="293000" />
+      <workItem from="1683646085456" duration="4185000" />
+      <workItem from="1683722607372" duration="14468000" />
+      <workItem from="1683892617469" duration="2691000" />
+      <workItem from="1683895333227" duration="5617000" />
+      <workItem from="1683951166877" duration="15254000" />
+      <workItem from="1684048780627" duration="3522000" />
+      <workItem from="1684073604667" duration="5126000" />
+      <workItem from="1684126254231" duration="4795000" />
+      <workItem from="1684143310063" duration="1628000" />
+      <workItem from="1684297341597" duration="2718000" />
+      <workItem from="1684302381689" duration="2666000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Client$Main.ic" NAME="Main Coverage Results" MODIFIED="1683730678661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

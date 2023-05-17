@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1aa34f0a-f325-466e-8684-0f13f19f8bc5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Client/src/main/java/controller/DirectoryMonitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/main/java/controller/ClientHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/main/java/controller/ClientHandle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/main/java/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/main/java/model/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/main/java/view/ClientFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/main/java/view/ClientFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/main/java/view/MainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/main/java/view/MainScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ServerHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ServerHandle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/ClientList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ClientList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/MainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/MainScreen.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2PL9mISdxLKyNNd9pQYlswGn9T6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;server&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ADMIN/OneDrive - VNU-HCMUS/Desktop/RemoteDirMonitor/Server&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1aa34f0a-f325-466e-8684-0f13f19f8bc5" name="Changes" comment="" />
+      <created>1683225653436</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683225653436</updated>
+      <workItem from="1683225654518" duration="82000" />
+      <workItem from="1683225888586" duration="4520000" />
+      <workItem from="1683272769391" duration="852000" />
+      <workItem from="1683645998271" duration="84000" />
+      <workItem from="1683648039243" duration="1290000" />
+      <workItem from="1683723205645" duration="14184000" />
+      <workItem from="1683893057927" duration="4744000" />
+      <workItem from="1683898754189" duration="2710000" />
+      <workItem from="1683951153669" duration="2765000" />
+      <workItem from="1683956934497" duration="14287000" />
+      <workItem from="1684049071614" duration="3442000" />
+      <workItem from="1684073570205" duration="3427000" />
+      <workItem from="1684125524580" duration="5279000" />
+      <workItem from="1684143482634" duration="1062000" />
+      <workItem from="1684298455618" duration="668000" />
+      <workItem from="1684302371355" duration="598000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
