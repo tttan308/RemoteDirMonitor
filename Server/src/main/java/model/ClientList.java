@@ -2,20 +2,32 @@ package model;
 
 import controller.ServerHandle;
 
-import java.net.Socket;
-import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
-public class ClientList {
-    public static ArrayList<Socket> clients = new ArrayList<>();
-    public static ArrayList<String> clientNames = new ArrayList<>();
 
+public class ClientList{
+    public static Map<String, ServerHandle> clients = new HashMap<>();
     public static void addClient(ServerHandle client) {
-        clients.add(client.getSocket());
-        clientNames.add(client.getName());
+        clients.put(client.getClientName(), client);
     }
 
-    public static void clear(){
-        clients.clear();
-        clientNames.clear();
+    public static void removeClient(String name) {
+        clients.remove(name);
+    }
+
+
+    public static ServerHandle getClient(String clientName) {
+        return clients.get(clientName);
+    }
+
+    public static void closeAll() {
+        for (ServerHandle client : clients.values()) {
+            try {
+                client.close();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        }
     }
 }

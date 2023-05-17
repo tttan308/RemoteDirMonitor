@@ -5,29 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aa34f0a-f325-466e-8684-0f13f19f8bc5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Client/src/main/java/controller/ClientHandle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Client/src/main/java/model/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Client/src/main/java/view/ClientFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ServerHandle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/ClientList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/.idea/Client.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/.idea/uiDesigner.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/src/main/java/controller/DirectoryMonitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/main/java/controller/ClientHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/main/java/controller/ClientHandle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/main/java/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/main/java/model/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/main/java/view/ClientFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/main/java/view/ClientFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/src/main/java/view/MainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/main/java/view/MainScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/src/view/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/src/view/MainScreen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/src1/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/src1/view/MainScreen.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ServerThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ServerHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ServerHandle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/ClientList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ClientList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Server.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/MainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/MainScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +79,17 @@
       <workItem from="1683272769391" duration="852000" />
       <workItem from="1683645998271" duration="84000" />
       <workItem from="1683648039243" duration="1290000" />
-      <workItem from="1683723205645" duration="1103000" />
+      <workItem from="1683723205645" duration="14184000" />
+      <workItem from="1683893057927" duration="4744000" />
+      <workItem from="1683898754189" duration="2710000" />
+      <workItem from="1683951153669" duration="2765000" />
+      <workItem from="1683956934497" duration="14287000" />
+      <workItem from="1684049071614" duration="3442000" />
+      <workItem from="1684073570205" duration="3427000" />
+      <workItem from="1684125524580" duration="5279000" />
+      <workItem from="1684143482634" duration="1062000" />
+      <workItem from="1684298455618" duration="668000" />
+      <workItem from="1684302371355" duration="598000" />
     </task>
     <servers />
   </component>
