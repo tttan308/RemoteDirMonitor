@@ -44,7 +44,6 @@ public class ClientFrame {
         JPanel buttonPanel = new JPanel();
         buttonPanel.setLayout(new FlowLayout());
         buttonPanel.add(disButton);
-        //set size for button
         disButton.setPreferredSize(new Dimension(200, 50));
         disButton.setFont(new Font("Serif", Font.BOLD, 25));
 
@@ -59,6 +58,8 @@ public class ClientFrame {
             @Override
             public void windowClosing(WindowEvent e) {
                 if(clientHandle != null) clientHandle.closeSocket();
+                msgRcv = new StringBuilder("Connecting to server...");
+                msgField.setText(msgRcv.toString());
                 registerClientFrame.setVisible(true);
                 clientFrame.setVisible(false);
             }

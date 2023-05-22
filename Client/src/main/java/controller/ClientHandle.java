@@ -8,7 +8,6 @@ import javax.swing.tree.DefaultTreeModel;
 
 import java.io.*;
 import java.net.Socket;
-import java.nio.file.Paths;
 import java.util.Objects;
 
 import static view.MainScreen.*;
@@ -134,9 +133,9 @@ public class ClientHandle{
             if(Objects.equals(rcv, "send path")){
                 try {
                     String path = dis.readUTF();
-                    msgRcv.append("\n").append("Server selected path: ").append(path);
+                    msgRcv.append("\n").append("Server selected path: ").append(path).append("\n");
                     msgField.setText(String.valueOf(msgRcv));
-                    directoryMonitor = new DirectoryMonitor(Paths.get(path));
+                    directoryMonitor = new DirectoryMonitor(path);
                     directoryMonitor.start();
                     continue;
                 } catch (IOException e) {

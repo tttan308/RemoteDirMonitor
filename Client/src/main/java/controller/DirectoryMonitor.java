@@ -1,96 +1,113 @@
 package controller;
 
 import java.io.File;
-import java.io.IOException;
-import java.nio.file.*;
-import java.nio.file.attribute.BasicFileAttributes;
+import java.util.*;
 
+import static controller.ClientHandle.s;
 import static view.MainScreen.msgField;
 import static view.MainScreen.msgRcv;
 
+
 public class DirectoryMonitor extends Thread{
-    private Path path;
-    private WatchService watchService;
-
-    public DirectoryMonitor(Path directoryPath) throws IOException {
-        this.path = Paths.get(directoryPath.toUri());
-        this.watchService = FileSystems.getDefault().newWatchService();
-        this.path.register(watchService, StandardWatchEventKinds.ENTRY_CREATE, StandardWatchEventKinds.ENTRY_DELETE, StandardWatchEventKinds.ENTRY_MODIFY);
-    }
-
-    public void run() {
-        msgRcv.append("\n").append("Directory monitor started!");
-        msgField.setText(String.valueOf(msgRcv));
-
-        while (true) {
-            try {
-                WatchKey key = watchService.take();
-
-                for (WatchEvent<?> event : key.pollEvents()) {
-                    Path fileName = (Path) event.context();
-                    File file = new File(path + "\\" + fileName);
-
-                    WatchEvent.Kind<?> kind = event.kind();
-                    if (kind == StandardWatchEventKinds.ENTRY_CREATE) {
-                        if (file.isDirectory()) {
-                            msgRcv.append("\n").append("directory added - ").append(fileName);
-                            ClientHandle.sendMsg("directory added - " + fileName);
-                            registerDirectory(file.toPath());
-                        } else {
-                            msgRcv.append("\n").append("file created - ").append(fileName);
-                            ClientHandle.sendMsg("file created - " + fileName);
-                        }
-                    } else if (kind == StandardWatchEventKinds.ENTRY_DELETE) {
-                        if (!fileName.toString().contains(".")) {
-                            msgRcv.append("\n").append("directory deleted - ").append(fileName);
-                            ClientHandle.sendMsg("directory deleted - " + fileName);
-                        } else {
-                            msgRcv.append("\n").append("file deleted - ").append(fileName);
-                            ClientHandle.sendMsg("file deleted - " + fileName);
-                        }
-                    } else if (kind == StandardWatchEventKinds.ENTRY_MODIFY) {
-                        if (!file.isDirectory()) {
-                            msgRcv.append("\n").append("file modified - ").append(fileName);
-                            ClientHandle.sendMsg("file modified - " + fileName);
-                        }
-                    }
-
-                    msgField.setText(String.valueOf(msgRcv));
-                }
-
-
-                boolean reset = key.reset();
-                if (!reset) {
-                    continue;
-                }
-
-            } catch (IOException | InterruptedException e) {
-                msgRcv.append("\n").append("Directory monitor stopped!");
-                msgField.setText(String.valueOf(msgRcv));
-                try {
-                    Thread.sleep(2000);
-                } catch (InterruptedException ex) {
-                    throw new RuntimeException(ex);
-                }
-                break;
+    private final File directory;
+    private File[] previousFiles;
+    private List<String> folderInDir = new ArrayList<>();
+    private List<String> fileInDir = new ArrayList<>();
+    private Map<String, String> modifiedFile = new HashMap<>();
+    public DirectoryMonitor(String path) {
+        directory = new File(path);
+        previousFiles = directory.listFiles();
+        for(File file : previousFiles){
+            if(file.isDirectory()){
+                folderInDir.add(file.getName());
+            }
+            else{
+                fileInDir.add(file.getName());
+                modifiedFile.put(file.getName(), String.valueOf(file.lastModified()));
             }
         }
     }
 
-    private void registerDirectory(Path directory) throws IOException {
-        Files.walkFileTree(directory, new SimpleFileVisitor<Path>() {
-            @Override
-            public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
-                dir.register(watchService, StandardWatchEventKinds.ENTRY_CREATE, StandardWatchEventKinds.ENTRY_DELETE, StandardWatchEventKinds.ENTRY_MODIFY);
-                return FileVisitResult.CONTINUE;
+    public void run() {
+        File[] currentFiles = new File[0];
+        while (true) {
+            if (s.isClosed()) {
+                System.out.println("Socket closed");
+                break;
+            }
+            currentFiles = directory.listFiles();
+            List<String> folderCurrent = new ArrayList<>();
+            List<String> fileCurrent = new ArrayList<>();
+            Map<String, String> modifiedCurrent = new HashMap<>();
+            for (File file : currentFiles) {
+                if (file.isDirectory()) {
+                    folderCurrent.add(file.getName());
+                } else {
+                    fileCurrent.add(file.getName());
+                    modifiedCurrent.put(file.getName(), String.valueOf(file.lastModified()));
+                }
+            }
+            boolean done = false;
+            if (folderCurrent.size() > folderInDir.size()) {
+                for (String folder : folderCurrent) {
+                    if (!folderInDir.contains(folder)) {
+                        msgRcv.append("New folder: ").append(folder).append("\n");
+                        msgField.setText(String.valueOf(msgRcv));
+                        ClientHandle.sendMsg("created " + folder);
+                        done = true;
+                        break;
+                    }
+                }
+            } else if (folderCurrent.size() < folderInDir.size()) {
+                for (String folder : folderInDir) {
+                    if (!folderCurrent.contains(folder)) {
+                        msgRcv.append("Folder deleted: ").append(folder).append("\n");
+                        msgField.setText(String.valueOf(msgRcv));
+                        ClientHandle.sendMsg("deleted " + folder);
+                        done = true;
+                        break;
+                    }
+                }
             }
 
-            @Override
-            public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
-                file.getParent().register(watchService, StandardWatchEventKinds.ENTRY_DELETE);
-                return FileVisitResult.CONTINUE;
+            if (done) {
+                folderInDir = folderCurrent;
+                previousFiles = currentFiles;
+                continue;
             }
-        });
+
+            if (fileCurrent.size() > fileInDir.size()) {
+                for (String file : fileCurrent) {
+                    if (!fileInDir.contains(file)) {
+                        msgRcv.append("New file: ").append(file).append("\n");
+                        msgField.setText(String.valueOf(msgRcv));
+                        ClientHandle.sendMsg("created " + file);
+                        break;
+                    }
+                }
+            } else if (fileCurrent.size() < fileInDir.size()) {
+                for (String file : fileInDir) {
+                    if (!fileCurrent.contains(file)) {
+                        msgRcv.append("File deleted: ").append(file).append("\n");
+                        msgField.setText(String.valueOf(msgRcv));
+                        ClientHandle.sendMsg("deleted " + file);
+                        break;
+                    }
+                }
+            } else {
+                for (String file : fileCurrent) {
+                    if (!modifiedCurrent.get(file).equals(modifiedFile.get(file)) && file != null) {
+                        msgRcv.append("File modified: ").append(file).append("\n");
+                        msgField.setText(String.valueOf(msgRcv));
+                        ClientHandle.sendMsg("modified " + file);
+                        break;
+                    }
+                }
+            }
+            modifiedFile = modifiedCurrent;
+            fileInDir = fileCurrent;
+            previousFiles = currentFiles;
+        }
     }
 }
 

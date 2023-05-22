@@ -5,7 +5,7 @@ import model.ClientList;
 import java.io.*;
 import java.net.Socket;
 
-import javax.swing.JTree;
+import javax.swing.*;
 
 import static view.MainScreen.*;
 
@@ -46,8 +46,11 @@ public class ServerHandle extends Thread{
                     String name = dis.readUTF();
                     msg.append(name).append(" has disconnected!\n");
                     msgField.setText(msg.toString());
+                    clientDirectory.remove(name);
+                    System.out.println(clientDirectory);
                     ClientList.removeClient(name);
                     clientListModel.removeElement(name);
+                    directoryPath.setText("");
                     socket.close();
                 }
 

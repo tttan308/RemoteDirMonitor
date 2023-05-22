@@ -86,6 +86,11 @@ public class MainScreen {
 
         disButton.addActionListener(e -> {
             if(clientHandle != null) clientHandle.closeSocket();
+            msgRcv = new StringBuilder("Connecting to server...");
+            msgField.setText(msgRcv.toString());
+            ipField.setText("");
+            portField.setText("");
+            clientNameField.setText("");
             registerClientFrame.setVisible(true);
             clientFrame.setVisible(false);
         });

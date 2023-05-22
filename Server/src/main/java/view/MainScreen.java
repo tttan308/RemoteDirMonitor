@@ -45,10 +45,10 @@ public class MainScreen {
     JList<String> clientList;
     JPanel selectDirectoryPanel;
     JLabel selectDirectory;
-    JLabel directoryPath;
+    public static JLabel directoryPath;
     JButton selectDirectoryButton;
 
-    Map <String, String> clientDirectory = new HashMap<>();
+    public static Map <String, String> clientDirectory = new HashMap<>();
 
     public MainScreen() {
         registerServerFrame();
